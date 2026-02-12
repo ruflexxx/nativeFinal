@@ -1,0 +1,14 @@
+
+import Foundation
+
+struct Calorie: Metric, Hashable {
+    let id: UUID
+    let workoutType: WorkoutType?
+    let date: Date?
+    let type: Measure = .calorie
+    let count: Int
+
+    var value: Double {
+        Double(count)
+    }
+}

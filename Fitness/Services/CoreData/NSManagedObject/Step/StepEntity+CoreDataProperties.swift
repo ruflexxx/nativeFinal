@@ -1,0 +1,14 @@
+
+
+import Foundation
+import CoreData
+
+
+extension StepEntity {
+    @NSManaged public var id: UUID
+    @NSManaged public var workoutType: Int16
+    @NSManaged public var date: Date?
+    @NSManaged public var type: Int16
+    @NSManaged public var count: Int16
+    @NSManaged public var workout: WorkoutEntity
+}
